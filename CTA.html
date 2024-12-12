@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Стоимость акций в USDT</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>CTA</h2>
+        <input type="text" id="ticker" class="input-field" placeholder="Тикер акции">
+        <input type="number" id="number" class="input-field" placeholder="Количество акций">
+        <button id="connectWalletButton" class="button">Подключить кошелек</button>
+        <div id="walletInfo" class="wallet-info"></div>
+        <button id="confirmButton" class="button" disabled>Подтвердить</button>
+        <button id="paymentButton" class="button" disabled>Перейти к оплате</button>
+        <div id="loadingIndicator" class="loading">Обработка запроса...</div>
+        <div id="resultText" class="result-text"></div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.3.0/dist/web3.min.js"></script>
+</body>
+</html>
